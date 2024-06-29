@@ -1,0 +1,65 @@
+# Miscellaneous
+*.class
+*.log
+*.pyc
+*.swp
+.DS_Store
+.atom/
+.buildlog/
+.history
+.svn/
+migrate_working_dir/
+
+# IntelliJ related
+*.iml
+*.ipr
+*.iws
+.idea/
+
+# Flutter/Dart/Pub related
+**/doc/api/
+**/ios/Flutter/.last_build_id
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.pub-cache/
+.pub/
+/build/
+
+# Symbolication related
+app.*.symbols
+
+# Obfuscation related
+app.*.map.json
+
+# Android Studio will place build artifacts here (adjusted for VS Code)
+build/
+!build/.vscode  # Allow VS Code-specific build configurations within the build folder
+
+# Flutter/Dart/Pub related (slightly refined)
+.dart_tool/
+.packages
+.flutter-plugins
+.flutter-plugins-dependencies
+.metadata
+/build
+/ios/Pods
+.ios
+.symlinks
+.idea/
+.android
+**/GeneratedPluginRegistrant.*
+pubspec.lock
+
+# Specific VS Code Exclusions (configurable)
+# Uncomment the following lines to exclude VS Code-specific files and folders:
+
+#.vscode/  # Exclude entire .vscode folder (comment out to include)
+#!.vscode/settings.json  # Uncomment to include VS Code settings
+
+# Optional Exclusions (consider based on your project needs)
+# - IDE-specific temporary or cache files (e.g., .vscode/extensions.json)
+# - Environment-specific configuration files (e.g., .env)
+# - Large or auto-generated files that don't need version control
+
+# Remember to customize this file for your specific project requirements.
