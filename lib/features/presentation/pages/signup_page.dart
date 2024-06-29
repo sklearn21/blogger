@@ -1,5 +1,6 @@
 import 'package:blogger/core/theme/app_pallete.dart';
 import 'package:blogger/features/presentation/widgets/auth_field.dart';
+import 'package:blogger/features/presentation/widgets/auth_gradient_button.dart';
 import 'package:flutter/material.dart';
 
 class SignupPage extends StatefulWidget {
@@ -47,6 +48,8 @@ class _SignupPageState extends State<SignupPage> {
                 AuthField(
                   hintText: 'Password',
                 ),
+                SizedBox(height: 30),
+                AuthGradientButton(),
               ],
             ),
           ),
