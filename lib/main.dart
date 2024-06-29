@@ -1,5 +1,5 @@
 import 'package:blogger/core/theme/theme.dart';
-import 'package:blogger/features/presentation/pages/signup_page.dart';
+import 'package:blogger/features/presentation/pages/signin_page.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -16,7 +16,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Blogger',
       theme: AppTheme.darkThemeMode,
-      home: const SignupPage(),
+      home: const SignInPage(),
     );
   }
 }
