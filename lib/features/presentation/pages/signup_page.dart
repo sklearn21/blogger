@@ -1,3 +1,5 @@
+import 'package:blogger/core/theme/app_pallete.dart';
+import 'package:blogger/features/presentation/widgets/auth_field.dart';
 import 'package:flutter/material.dart';
 
 class SignupPage extends StatefulWidget {
@@ -12,7 +14,43 @@ class _SignupPageState extends State<SignupPage> {
   Widget build(BuildContext context) {
     return const Scaffold(
       body: Center(
-        child: Text("Signup Page"),
+        child: SingleChildScrollView(
+          child: Padding(
+            padding: EdgeInsets.all(15.0),
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              mainAxisSize: MainAxisSize.min,
+              children: [
+                Text(
+                  "Sign Up",
+                  style: TextStyle(
+                    color: AppPallete.whiteColor,
+                    fontSize: 50,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+                SizedBox(
+                  height: 30,
+                ),
+                AuthField(
+                  hintText: 'Name',
+                ),
+                SizedBox(
+                  height: 15,
+                ),
+                AuthField(
+                  hintText: 'Email',
+                ),
+                SizedBox(
+                  height: 15,
+                ),
+                AuthField(
+                  hintText: 'Password',
+                ),
+              ],
+            ),
+          ),
+        ),
       ),
     );
   }
