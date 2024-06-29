@@ -63,3 +63,6 @@ pubspec.lock
 # - Large or auto-generated files that don't need version control
 
 # Remember to customize this file for your specific project requirements.
+
+#ignore secret files
+lib/core/secrets/app_secrets.dart
