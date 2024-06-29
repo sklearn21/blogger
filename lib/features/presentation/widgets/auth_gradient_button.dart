@@ -22,7 +22,10 @@ class AuthGradientButton extends StatelessWidget {
             shadowColor: AppPallete.transparentColor),
         child: const Text(
           'Sign Up',
-          style: TextStyle(fontSize: 17, fontWeight: FontWeight.w600),
+          style: TextStyle(
+            fontSize: 17,
+            fontWeight: FontWeight.w600,
+          ),
         ),
       ),
     );
