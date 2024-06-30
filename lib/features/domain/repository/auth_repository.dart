@@ -2,13 +2,13 @@ import 'package:blogger/core/error/failures.dart';
 import 'package:fpdart/fpdart.dart';
 
 abstract interface class AuthRepository {
-  Either<Failure, String> signUpWithEmailassword({
+  Future<Either<Failure, String>> signUpWithEmailPassword({
     required String email,
     required String password,
     required String name,
   });
 
-  Either<Failure, String> loginWithEmailassword({
+  Future<Either<Failure, String>> loginWithEmailPassword({
     required String email,
     required String password,
   });

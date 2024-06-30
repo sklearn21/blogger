@@ -35,12 +35,12 @@ class AuthRemoteDataSourceImpl implements AuthRemoteDataSource {
           .signUp(password: password, email: email, data: {'name': name});
 
       if (response.user == null) {
-        throw ServerExceptions(message: 'User is null');
+        throw ServerException(message: 'User is null');
       }
 
       return response.user!.id;
     } catch (e) {
-      throw ServerExceptions(message: e.toString());
+      throw ServerException(message: e.toString());
     }
   }
 }
