@@ -84,6 +84,10 @@ class _SignupPageState extends State<SignupPage> {
                                 password: passwordController.text.trim(),
                               ),
                             );
+
+                        nameController.clear();
+                        emailController.clear();
+                        passwordController.clear();
                       }
                     },
                   ),
