@@ -1,8 +1,10 @@
 import 'package:blogger/core/theme/app_pallete.dart';
+import 'package:blogger/features/presentation/bloc/auth_bloc.dart';
 import 'package:blogger/features/presentation/pages/signin_page.dart';
 import 'package:blogger/features/presentation/widgets/auth_field.dart';
 import 'package:blogger/features/presentation/widgets/auth_gradient_button.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 
 class SignupPage extends StatefulWidget {
   static route() => MaterialPageRoute(builder: (context) => const SignupPage());
@@ -73,7 +75,17 @@ class _SignupPageState extends State<SignupPage> {
                   const SizedBox(height: 30),
                   AuthGradientButton(
                     buttonText: 'Sign Up',
-                    onPressed: () {},
+                    onPressed: () {
+                      if (formKey.currentState!.validate()) {
+                        context.read<AuthBloc>().add(
+                              AuthSigUp(
+                                name: nameController.text.trim(),
+                                email: emailController.text.trim(),
+                                password: passwordController.text.trim(),
+                              ),
+                            );
+                      }
+                    },
                   ),
                   const SizedBox(height: 20),
                   GestureDetector(
