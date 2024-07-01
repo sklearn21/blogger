@@ -9,7 +9,7 @@ abstract interface class AuthRemoteDataSource {
     required String email,
   });
 
-  Future<UserModel> signInWithEmailPassword({
+  Future<UserModel> loginWithEmailPassword({
     required String password,
     required String email,
   });
@@ -20,7 +20,7 @@ class AuthRemoteDataSourceImpl implements AuthRemoteDataSource {
 
   AuthRemoteDataSourceImpl(this.supabaseClient);
   @override
-  Future<UserModel> signInWithEmailPassword(
+  Future<UserModel> loginWithEmailPassword(
       {required String password, required String email}) {
     // TODO: implement signInWithEmailPassword
     throw UnimplementedError();
