@@ -7,3 +7,5 @@ abstract interface class Usecase<SuccessType, Params> {
   ///This call function is a unique function when it is inside a class.
   ///
 }
+
+class NoParams {}
